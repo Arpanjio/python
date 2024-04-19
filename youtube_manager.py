@@ -48,6 +48,8 @@ def delete_video(videos):
     if 1<= index <= len(videos):
         del videos[index-1]
         save_data_helper(videos)
+        print("\nNew video list")
+        list_all_videos(videos)
     else:
         print("invalid index selected")
 
